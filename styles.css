@@ -1,0 +1,108 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#theme-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+.resume-download {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.dark-mode header {
+    background-color: #444;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.welcome-message {
+    position: relative;
+    text-align: center;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: float 5s ease-in-out infinite;
+}
+
+.circle1 {
+    width: 100px;
+    height: 100px;
+    background-color: #ff8c00;
+    top: -50px;
+    left: -50px;
+    animation-delay: 0s;
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    background-color: #ff00ff;
+    top: 150px;
+    right: -75px;
+    animation-delay: -2.5s;
+}
+
+.circle3 {
+    width: 120px;
+    height: 120px;
+    background-color: #1e90ff;
+    bottom: -60px;
+    left: 150px;
+    animation-delay: -4s;
+}
+
+.circle4 {
+    width: 80px;
+    height: 80px;
+    background-color: #32cd32;
+    bottom: 100px;
+    right: 150px;
+    animation-delay: -6s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
