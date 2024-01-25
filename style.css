@@ -1,15 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    text-align: center;
+    background-color: #202020;
+    color: #fff;
     padding: 1rem 0;
+    text-align: center;
 }
 
 nav ul {
@@ -19,11 +21,11 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -32,9 +34,19 @@ section {
     text-align: center;
 }
 
+.project {
+    margin-bottom: 2rem;
+}
+
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #202020;
+    color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        font-size: 0.8em;
+    }
 }
